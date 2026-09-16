@@ -1,0 +1,35 @@
+{
+  "canvas": {
+    "width": 1200,
+    "height": 1600,
+    "background": "#F4F0EA"
+  },
+  "layers": [
+    {
+      "type": "rectangle",
+      "box": [64, 64, 1136, 360],
+      "radius": 44,
+      "fill": "#14263F"
+    },
+    {
+      "type": "text",
+      "text": "ТОЧНЫЙ ЗАГОЛОВОК",
+      "position": [112, 110],
+      "size": 92,
+      "weight": 750,
+      "max_width": 930,
+      "fill": "#FFFFFF",
+      "spacing": 18
+    },
+    {
+      "type": "text",
+      "text": "Подтверждённое преимущество товара",
+      "position": [112, 390],
+      "size": 52,
+      "weight": 450,
+      "max_width": 900,
+      "fill": "#14263F"
+    }
+  ],
+  "output": "rendered-card.png"
+}

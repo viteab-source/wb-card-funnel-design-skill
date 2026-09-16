@@ -11,23 +11,29 @@
 - блокирует неподтверждённые claims, подмену товара и неполный research-gate;
 - проверяет медиа, OCR и готовность выдачи локальными Python-валидаторами.
 
-## Установка для Codex
+## Самая простая установка через Codex
+
+Отправьте агенту ссылку на этот репозиторий и текст из [`wb-card-funnel-design/INSTALL-PROMPT.md`](wb-card-funnel-design/INSTALL-PROMPT.md). Codex с системным `skill-installer` скачает каталог скилла, а затем автоматически подготовит локальную среду. После установки скилл доступен на следующем ходе.
+
+## Автоматическая установка из клона
 
 ```bash
 git clone https://github.com/viteab-source/wb-card-funnel-design-skill.git
-mkdir -p ~/.codex/skills
-cp -R wb-card-funnel-design-skill/wb-card-funnel-design ~/.codex/skills/
+cd wb-card-funnel-design-skill
+python3 install.py
 ```
 
-Перезапустите Codex и попросите применить `wb-card-funnel-design` к фотографиям одного товара.
+На Windows используйте `py -3 install.py` или `python install.py`. Установщик сам копирует скилл в Codex, создаёт приватную `.runtime`, ставит Pillow и запускает doctor. Права администратора не нужны.
 
 ## Требования
 
 - Codex с доступом к локальным файлам;
-- Python 3 для встроенных проверок;
+- Python 3.10+; остальные локальные зависимости ставятся автоматически в каталог скилла;
 - браузер или другой разрешённый источник для исследования актуальных карточек;
 - генератор изображений или графический редактор, если нужны готовые визуалы;
 - `MPSTATS_TOKEN` опционален и читается только из окружения.
+
+Кириллический Inter и OFL-лицензия входят в пакет. Локальный рендерер одинаково собирает точный текст, плашки и пользовательские изображения на macOS и Windows. Доступ к `imagegen` и web/browser определяется аккаунтом и приложением Codex и не может быть установлен GitHub-репозиторием.
 
 ## Проверка
 
@@ -35,6 +41,8 @@ cp -R wb-card-funnel-design-skill/wb-card-funnel-design ~/.codex/skills/
 python3 -m unittest discover -s wb-card-funnel-design/scripts -p 'test_*.py'
 python3 /path/to/skill-creator/scripts/quick_validate.py wb-card-funnel-design
 ```
+
+Публичный CI повторяет установку, doctor, полный набор тестов и smoke-render на macOS и Windows с Python 3.11 и 3.13.
 
 ## Ограничения публичного пакета
 

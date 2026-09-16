@@ -1,0 +1,29 @@
+name: portable-install
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  install-and-test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, windows-latest]
+        python-version: ["3.11", "3.13"]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install skill and runtime
+        run: python install.py --dest _installed
+      - name: Run doctor
+        run: python _installed/wb-card-funnel-design/scripts/run_tool.py doctor.py --json --strict-local
+      - name: Run all tests
+        run: python _installed/wb-card-funnel-design/scripts/bootstrap_runtime.py --exec -- -m unittest discover -s scripts -p "test_*.py"
+      - name: Render smoke card
+        run: python _installed/wb-card-funnel-design/scripts/run_tool.py render_infographic.py assets/render-spec-template.json --output smoke.png
