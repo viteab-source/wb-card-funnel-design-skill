@@ -14,7 +14,7 @@
 ## Установка для Codex
 
 ```bash
-git clone <URL-РЕПОЗИТОРИЯ>
+git clone https://github.com/viteab-source/wb-card-funnel-design-skill.git
 mkdir -p ~/.codex/skills
 cp -R wb-card-funnel-design-skill/wb-card-funnel-design ~/.codex/skills/
 ```
