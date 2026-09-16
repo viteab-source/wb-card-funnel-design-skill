@@ -18,6 +18,7 @@ SKILL_ROOT = Path(__file__).resolve().parent.parent
 
 def report() -> dict:
     fonts = SKILL_ROOT / "assets" / "fonts" / "inter"
+    version_file = SKILL_ROOT / "VERSION"
     checks = {
         "python_3_10_plus": sys.version_info >= (3, 10),
         "pillow": importlib.util.find_spec("PIL") is not None,
@@ -35,6 +36,7 @@ def report() -> dict:
         "platform_release": platform.release(),
         "machine": platform.machine(),
         "python": platform.python_version(),
+        "skill_version": version_file.read_text(encoding="utf-8").strip() if version_file.is_file() else "unknown",
         "required_local_checks": checks,
         "optional_local_checks": optional,
         "codex_capabilities_to_check_in_session": {

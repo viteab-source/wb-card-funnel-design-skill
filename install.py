@@ -50,6 +50,7 @@ def main() -> int:
     print(json.dumps({
         "status": "installed",
         "skill": SOURCE.name,
+        "version": (destination / "VERSION").read_text(encoding="utf-8").strip(),
         "destination": str(destination),
         "runtime": bootstrap_result,
         "available": "next Codex turn",

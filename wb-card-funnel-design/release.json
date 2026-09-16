@@ -1,0 +1,8 @@
+{
+  "schema_version": 1,
+  "name": "wb-card-funnel-design",
+  "version": "0.2.0",
+  "repository": "viteab-source/wb-card-funnel-design-skill",
+  "release_channel": "stable",
+  "minimum_python": "3.10"
+}
