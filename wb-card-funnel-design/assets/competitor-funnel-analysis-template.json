@@ -1,0 +1,33 @@
+{
+  "status": "draft",
+  "approved_competitor_ids": [],
+  "competitors": [
+    {
+      "competitor_id": null,
+      "gallery_complete": false,
+      "slide_count": 0,
+      "slides": [
+        {
+          "position": 1,
+          "file": null,
+          "visible_text": [],
+          "role": null,
+          "buyer_question": null,
+          "scene_or_angle": null,
+          "composition": null,
+          "claim_or_benefit": null,
+          "proof": null,
+          "notes": null
+        }
+      ]
+    }
+  ],
+  "cross_competitor_synthesis": {
+    "question_bank": [],
+    "message_bank": [],
+    "sequence_patterns": [],
+    "strong_unique_moves": [],
+    "unsupported_claims": [],
+    "free_zone": []
+  }
+}

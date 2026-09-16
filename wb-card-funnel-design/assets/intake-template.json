@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "run_id": null,
+  "marketplace": "WB",
+  "marketplace_region": null,
+  "card_state": "unknown",
+  "objective": null,
+  "execution_mode": "autopilot",
+  "product": {
+    "name": null,
+    "nm_id": null,
+    "url": null,
+    "variant": null,
+    "category": null,
+    "sales_started_at": null,
+    "price_segment": null,
+    "audience_use_case": null,
+    "risk_profiles": []
+  },
+  "research": {
+    "query": null,
+    "query_is_hypothesis": false,
+    "competitor_urls": [],
+    "depth": "category_map",
+    "jam": "not_asked",
+    "lane": "unresolved",
+    "limitations": []
+  },
+  "data": {
+    "preferred_route": "xlsx",
+    "period_start": null,
+    "period_end": null,
+    "comparison_start": null,
+    "comparison_end": null,
+    "reports": [],
+    "change_events": []
+  },
+  "experiment_context": {
+    "initial_control_asset": null,
+    "traffic_source": "unknown",
+    "conditions_known": false,
+    "price_or_discount": "unknown",
+    "advertising": "unknown",
+    "stock": "unknown",
+    "promotions": "unknown"
+  },
+  "facts": [],
+  "assets": [],
+  "brand_constraints": [],
+  "capabilities": {
+    "image_view": "unknown",
+    "xlsx_read": "unknown",
+    "image_generate": "unknown",
+    "image_compose": "unknown",
+    "file_export": "unknown"
+  },
+  "question_log": [],
+  "open_requests": [],
+  "readiness": {
+    "research": {
+      "status": "blocked",
+      "reason": "Контекст ещё не разобран"
+    },
+    "diagnosis": {
+      "status": "blocked",
+      "reason": "Режим и данные ещё не проверены"
+    },
+    "design": {
+      "status": "blocked",
+      "reason": "Факты и исходники ещё не проверены"
+    },
+    "generation": {
+      "status": "blocked",
+      "reason": "Возможности среды ещё не проверены"
+    }
+  },
+  "next_action": null,
+  "commercial_messages": [
+    {
+      "id": "message-candidate-01",
+      "buyer_question": null,
+      "statement": null,
+      "type": "category|model|size|fit|season|temperature|water_resistance|insulation|material|construction|comfort|outsole|care|package|other",
+      "fact_refs": [],
+      "variant": null,
+      "variant_scope": "single_variant",
+      "status": "confirmed|unknown|conflicting|excluded",
+      "priority": "primary|secondary",
+      "planned_slide_role": null
+    }
+  ]
+}

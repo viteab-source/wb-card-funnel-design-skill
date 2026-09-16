@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "run_id": null,
+  "intake_file": "intake.json",
+  "target": {
+    "variant": null,
+    "variant_scope": "single_variant"
+  },
+  "readiness_status": "draft-brief",
+  "claims": [],
+  "slides": []
+}

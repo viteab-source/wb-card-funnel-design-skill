@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "run_id": null,
+  "production_manifest_file": "production-manifest.json",
+  "status": "draft",
+  "profile": {
+    "id": "internal-wb-working-example",
+    "basis": "Internal working example; verify against current official WB requirements before use",
+    "checked_at": "2026-09-06",
+    "allowed_formats": [
+      "png",
+      "jpeg",
+      "webp"
+    ],
+    "min_width_px": 900,
+    "max_width_px": 1800,
+    "min_height_px": 1200,
+    "max_height_px": 2400,
+    "min_aspect_ratio": 0.74,
+    "max_aspect_ratio": 0.76,
+    "max_bytes": 10485760,
+    "duplicate_content_policy": "fail",
+    "allow_external_paths": false
+  },
+  "slides": [
+    {
+      "id": "cover",
+      "order": 1,
+      "status": "ready",
+      "output": "exports/01-cover.png"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "status": "user_approved | autopilot_selected",
+  "selected_candidate": "01",
+  "reviewed_candidates": ["01", "02", "03"],
+  "reason": "Кратко: подтверждённый факт, покупательский вопрос и отличие от категории."
+}

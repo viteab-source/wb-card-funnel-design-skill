@@ -1,0 +1,17 @@
+{
+  "status": "pending_user_review",
+  "shown_at": null,
+  "candidates": [
+    {
+      "competitor_id": null,
+      "url": null,
+      "cover_file": null,
+      "match_reason": null,
+      "user_decision": "pending",
+      "user_feedback": null
+    }
+  ],
+  "approved_competitor_ids": [],
+  "rejected_competitor_ids": [],
+  "user_evidence": null
+}

@@ -1,0 +1,15 @@
+{
+  "status": "draft | pass",
+  "checked_at": null,
+  "rules_checked_at": null,
+  "wb_rule_urls": [],
+  "media_profile": {"format": null, "pixels": null, "file_size_bytes": null, "color_profile": null},
+  "checks": [
+    {"id": "product_fidelity", "status": "draft", "evidence": "SKU, цвет, форма, маркировка и комплектация сверены с исходниками"},
+    {"id": "claims_and_implied_claims", "status": "draft", "evidence": "Видимый текст и сценические обещания сверены с claims"},
+    {"id": "rights", "status": "draft", "evidence": "Права на фото, шрифты, логотипы и графику подтверждены"},
+    {"id": "mobile_readability", "status": "draft", "evidence": "Проверены миниатюра и безопасная обрезка"},
+    {"id": "wb_rules", "status": "draft", "evidence": "Официальные правила WB перепроверены с датой и ссылками"},
+    {"id": "series_review", "status": "draft", "evidence": "Visual DNA сохранён, соседние слайды не повторяют композицию"}
+  ]
+}

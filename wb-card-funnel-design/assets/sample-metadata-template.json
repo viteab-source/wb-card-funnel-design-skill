@@ -1,0 +1,18 @@
+{
+  "sample_id": "YYYYMMDD-HHMM-query-slug",
+  "query": "точный поисковый запрос",
+  "observed_started_at": "2026-09-03T13:00:00+03:00",
+  "observed_finished_at": "2026-09-03T13:15:00+03:00",
+  "timezone": "Europe/Moscow",
+  "region": "unknown",
+  "device": "desktop",
+  "viewport_width": 1440,
+  "auth_mode": "guest",
+  "sort": "default",
+  "filters": [],
+  "period_start": "2026-06-05",
+  "period_end": "2026-09-02",
+  "sample_status": "ready",
+  "block_reason": null,
+  "collection_source": "wb_browser"
+}

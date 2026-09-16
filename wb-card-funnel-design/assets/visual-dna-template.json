@@ -1,0 +1,36 @@
+{
+  "run_id": "article-slug",
+  "status": "draft",
+  "product_anchor": {
+    "asset_refs": ["photo-01"],
+    "immutable_traits": [
+      {"trait": "цвет", "fact_refs": ["fact-01"]},
+      {"trait": "материал", "fact_refs": ["fact-02"]},
+      {"trait": "маркировка и логотип", "fact_refs": ["fact-03"]},
+      {"trait": "силуэт, подошва, швы и комплектация", "asset_refs": ["photo-01"]}
+    ],
+    "forbidden_changes": ["другая модель", "изменённый логотип", "лишняя комплектация", "неподтверждённая технология"]
+  },
+  "art_direction": {
+    "id": "wb-performance-infographic | street-editorial | technical-y2k | quiet-premium | custom",
+    "approval_status": "pending_user | approved | autopilot_selected",
+    "reference_ids": ["ref-001"],
+    "palette": ["#000000"],
+    "type_system": "описание иерархии",
+    "lighting": "направление, жёсткость, температура",
+    "background": "описание",
+    "camera": "ракурс, фокусное ощущение, дистанция",
+    "composition_rules": ["товар — главный объект", "один приём на слайд"],
+    "anti_patterns": ["универсальная шапка", "мелкий товар", "перегруз иконками"]
+  },
+  "series_anchor": {
+    "color_grade": "описание",
+    "light_direction": "описание",
+    "background_family": "описание",
+    "type_hierarchy": "описание"
+  },
+  "shot_plan": [
+    {"id": "cover", "role": "hero", "buyer_question": "что это", "asset_refs": ["photo-01"], "claim_refs": [], "composition": "описание", "qa": ["товар целиком", "читается в миниатюре"]}
+  ],
+  "qa": {"art_direction_checked": false, "product_fidelity_checked": false, "mobile_thumbnail_checked": false, "series_coherence_checked": false}
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "WB · Воронка карточки"
+  short_description: "Интервью, XLSX и дизайн карточек WB для любых товаров"
+  default_prompt: "Используй $wb-card-funnel-design: проведи короткое интервью, запроси нужные XLSX и фото и подготовь воронку карточки WB под мой товар."

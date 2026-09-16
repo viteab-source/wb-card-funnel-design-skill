@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "run_id": null,
+  "objective": "experiment",
+  "initial_control": {
+    "asset_ref": null,
+    "version": null,
+    "observed_period": null
+  },
+  "shared_conditions": {
+    "traffic_source": "unknown",
+    "price_or_discount": "unknown",
+    "advertising": "unknown",
+    "stock": "unknown",
+    "promotions": "unknown",
+    "other_changes": []
+  },
+  "rounds": [
+    {
+      "id": "round-01",
+      "type": "concept_comparison",
+      "hypothesis": null,
+      "control_version": null,
+      "variants": [],
+      "observations": [],
+      "contamination": [],
+      "decision": "not_started",
+      "limitations": [],
+      "sampling_plan": {
+        "baseline_ctr": null,
+        "minimum_detectable_effect": null,
+        "target_impressions_per_variant": null,
+        "stopping_rule": null
+      }
+    }
+  ],
+  "final_comparison": {
+    "candidate_version": null,
+    "initial_control_version": null,
+    "status": "not_started",
+    "limitations": []
+  }
+}
